@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.javalec.ex.dao.BDao;
 import com.javalec.ex.dto.BDto;
 
-public class BcontentCommand implements BCommand {
+public class BContentCommand implements BCommand {
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse reponse) {

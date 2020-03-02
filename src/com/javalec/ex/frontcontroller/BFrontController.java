@@ -9,6 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.javalec.ex.command.BCommand;
+import com.javalec.ex.command.BContentCommand;
+import com.javalec.ex.command.BDeleteCommand;
+import com.javalec.ex.command.BListCommand;
+import com.javalec.ex.command.BModifyCommand;
+import com.javalec.ex.command.BReplyCommand;
+import com.javalec.ex.command.BReplyViewCommand;
+import com.javalec.ex.command.BWriteCommand;
+
 /**
  * Servlet implementation class BFrontController
  */
@@ -50,7 +59,7 @@ public class BFrontController extends HttpServlet { //BfrontController가 HttpSe
 	    request.setCharacterEncoding("EUC-KR");
 	    
 	    String viewPage = null; //FrontController가 나중에 요청을 받은 후 어떤 View를 보여줄건지그 역할을 하는 것 
-	    BCommand commnad = null; //Command 역할을 수행할 객체를 선언. 어떤 로직을 수행할지. 값이 바뀔 수 있으니 null값
+	    BCommand command = null; //Command 역할을 수행할 객체를 선언. 어떤 로직을 수행할지. 값이 바뀔 수 있으니 null값
 	    
 	    String uri = request.getRequestURI(); //1)요청request로 부터 URI를 get함. frontController 객체 사용시와 같은 방식.
 	    String conPath = request.getContextPath(); //2) getContextPath수행 
@@ -67,7 +76,7 @@ public class BFrontController extends HttpServlet { //BfrontController가 HttpSe
 	     */
 	    else if (com.equals("/write.do")) { //작성하는 화면을 요청하면
 	        command = new BWriteCommand(); 
-	        command.execute(requset, response);
+	        command.execute(request, response);
 	        viewPage = "list.do"; // viewPage에 list.do를 주면, list를 작성하면 화면이 보여짐.
 	    }
 	    else if (com.equals("/list.do")) {
