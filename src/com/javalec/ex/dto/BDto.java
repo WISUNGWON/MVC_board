@@ -3,9 +3,8 @@ package com.javalec.ex.dto;
 import java.sql.Timestamp;
 
 public class BDto {
-    
-    // DB의 column명과 같은 변수를 선언해줌
-    int bld;
+
+    int bId;
     String bName;
     String bTitle;
     String bContent;
@@ -15,14 +14,13 @@ public class BDto {
     int bStep;
     int bIndent;
     
-    // 디폴트 생성자.
     public BDto() {
-        
+        // TODO Auto-generated constructor stub
     }
     
-    // 생성시에 인자값을 받고 값을 초기화하는 생성자.
-    public BDto (int bld, String bName, String bTitle, String bContent, Timestamp bDate, int bHit, int bGroup, int bStep, int bIndent) {
-        this.bld = bld;
+    public BDto(int bId, String bName, String bTitle, String bContent, Timestamp bDate, int bHit, int bGroup, int bStep, int bIndent) {
+        // TODO Auto-generated constructor stub
+        this.bId = bId;
         this.bName = bName;
         this.bTitle = bTitle;
         this.bContent = bContent;
@@ -31,15 +29,14 @@ public class BDto {
         this.bGroup = bGroup;
         this.bStep = bStep;
         this.bIndent = bIndent;
-        
     }
 
-    public int getBld() {
-        return bld;
+    public int getbId() {
+        return bId;
     }
 
-    public void setBld(int bld) {
-        this.bld = bld;
+    public void setbId(int bId) {
+        this.bId = bId;
     }
 
     public String getbName() {
@@ -98,12 +95,12 @@ public class BDto {
         this.bStep = bStep;
     }
 
-    public int getBIndent() {
+    public int getbIndent() {
         return bIndent;
     }
 
-    public void setBIndent(int bIndent) {
+    public void setbIndent(int bIndent) {
         this.bIndent = bIndent;
     }
-
+    
 }
