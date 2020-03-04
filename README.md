@@ -10,9 +10,9 @@ Web Site Board created with JSP, Servlet based on MVC Moder2
 
 ## Project Explain
 ## Inspiration
-I followed course on Inflearn called ["½ÅÀÔ ÇÁ·Î±×·¡¸Ó¸¦ À§ÇÑ ½ÇÀü JSP °­ÁÂ"](https://www.inflearn.com/course/%EC%8B%A4%EC%A0%84-jsp-%EA%B0%95%EC%A2%8C#)
+I followed course on Inflearn called ["ì‹ ìž… í”„ë¡œê·¸ëž˜ë¨¸ë¥¼ ìœ„í•œ ì‹¤ì „ JSP ê°•ì¢Œ"](https://www.inflearn.com/course/%EC%8B%A4%EC%A0%84-jsp-%EA%B0%95%EC%A2%8C#)
 
-This project was last practice on this course to make web-site board. and I used all of technologies what I have learned from the course
+This project was last practice on this course to make web-site board. I used all of technologies what I have learned from the course
  
 ## Technologies
 
